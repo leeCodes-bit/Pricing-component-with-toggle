@@ -5,8 +5,10 @@ body{
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: hsl(234, 14%, 74%)
-  ;
+  background: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+  background-position: top right, bottom left;
+  background-repeat: no-repeat, no-repeat;
+  background-color:  hsl(240, 43%, 95%);
 }
 h1{
   font-size: 20px;
@@ -27,7 +29,7 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background-color: #ccc;
+background-color: hsl(234, 14%, 74%);
 -webkit-transition: .4s;
 transition: .4s;
 border-radius: 34px;
@@ -68,11 +70,14 @@ transform: translateX(26px);
   font-weight: 700;
 }
 .card-items{
-  background-color: hsl(240, 78%, 98%);
+  background-color: #fff;
   margin: 30px 10px;
   border-radius: 10px;
   padding: 15px 0;
   padding-bottom: 40px;
+}
+.card-items.two{
+  border-radius: 0px 10px 10px 0;
 }
 .card-item{
   background:  hsl(237, 63%, 64%);
@@ -92,18 +97,18 @@ p{
   font-weight: bold;
 }
 .btns{
-  background-color: hsl(240, 78%, 98%);
+  background-color: transparent;
   padding: 10px 90px;
   border-radius: 6px;
-  color: hsl(237, 63%, 64%);
+  color: #fff;
   font-weight: bold;
   cursor: pointer;
 }
 .btn{
   padding: 10px 90px;
-  background-color: hsl(237, 63%, 64%);
+  background-color: transparent;
   border-radius: 6px;
-  color: white;
+  color: hsl(237, 63%, 64%);
   font-weight: bold;
   cursor: pointer;
 }
@@ -158,11 +163,18 @@ p{
   .card-item{
     margin: 0;
     padding: 15px 20px;
+    padding: 45px 30px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .card-items.two{
+    border-radius: 0px 10px 10px 0;
   }
   .card-items{
-    margin: 0;
+    /* margin: 0; */
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 10px 0 0 10px;
   }
   p{
   border-left: 0;

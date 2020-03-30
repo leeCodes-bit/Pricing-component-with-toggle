@@ -22,3 +22,15 @@ getRate.addEventListener('click', function(){
 
 })
 
+/*
+const switchInput = document.querySelector(".switch input");
+const cards = document.querySelector(".cards");
+switchInput.addEventListener("change", function () {
+  if (switchInput.checked !== true) {
+    cards.classList.add("toggle");
+  } else {
+    cards.classList.remove("toggle");
+  }
+});
+
+*/
